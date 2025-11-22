@@ -1,0 +1,1 @@
+echo "hello %USERNAME%, you are hacked by [REDACTED]" > pointless.txt

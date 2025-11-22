@@ -1,0 +1,172 @@
+FRACTAL FORMULAS AND EXPLANATIONS
+
+This document gives an overview of major fractal formulas, how they
+work, and what parameters control them. It is written in plain technical
+style for developers.
+
+  ---------------------------------
+  1. MANDELBROT SET (CLASSIC)
+  ---------------------------------
+  Formula: z_{n+1} = z_n^2 + c
+  Where: z = complex number (starts
+  at 0) c = position on the complex
+  plane Iteration rule: Repeat
+  until |z| > 2 or max iterations
+  reached Coloring: - Number of
+  iterations before escape - Smooth
+  coloring: n + 1 - log(log|z|)/log
+  2 Notes: - Shape defined by which
+  c-values never escape.
+
+  ---------------------------------
+
+2. JULIA SET (CLASSIC)
+
+Formula: z_{n+1} = z_n^2 + k Where: k = constant complex number
+Iteration: z starts at pixel coordinate Coloring: Same as Mandelbrot
+Notes: Each value of k gives a different Julia fractal.
+
+  ---------------------------------
+  3. BURNING SHIP FRACTAL
+  ---------------------------------
+  Formula: z = (|Re(z)| +
+  i|Im(z)|)^2 + c Iteration:
+  Absolute value applied before
+  squaring Notes: Creates sharp,
+  angular “ship-like” structures.
+
+  ---------------------------------
+
+4. MULTIBROT (POWER) FRACTALS
+
+Formula: z_{n+1} = z_n^p + c Where: p = any real number (2 = Mandelbrot)
+Notes: p=3 → “Triplebrot” p=4 → “Quadbrot”
+
+  ---------------------------------
+  5. NEWTON FRACTAL
+  ---------------------------------
+  Formula: z_{n+1} = z - f(z)/f’(z)
+  For: f(z) = z^3 - 1 (classic)
+  Notes: Pixels color based on
+  which root iteration converges
+  to.
+
+  ---------------------------------
+
+6. LYAPUNOV FRACTAL
+
+Formula: x_{n+1} = a_n * x_n * (1 - x_n) Where: a-values alternate
+between params A and B Notes: Color = Lyapunov exponent (chaos measure)
+
+  ---------------------------------
+  7. FRACTAL NOISE (PERLIN /
+  SIMPLEX)
+  ---------------------------------
+  Base idea: noise(x) gives
+  pseudo-random gradient value
+  Fractal noise (fBM): total = Σ (
+  noise(x * freq) * amp ) freq =
+  lacunarity amp = gain Notes: Used
+  for terrains, clouds, textures.
+
+  ---------------------------------
+
+8. IFS FRACTALS (Iterated Function Systems)
+
+Rules: Each rule transforms (x,y) by: x’ = a x + b y + e y’ = c x + d
+y + f Repeated randomly based on probability. Examples: Barnsley Fern
+Sierpinski Triangle Cantor Dust
+
+  ---------------------------------
+  9. L-SYSTEM FRACTALS
+  ---------------------------------
+  Grammar-like system: Variables:
+  F, +, - Axiom: F Rules: F →
+  F+F−F−F+F Rendering: Turtle
+  graphics interprets each symbol.
+
+  ---------------------------------
+
+10. KOCH CURVE / SNOWFLAKE
+
+Rule: F → F+F−−F+F Geometry: Split line into 3 parts, replace middle
+with triangle.
+
+  ---------------------------------
+  11. CANTOR SET
+  ---------------------------------
+  Steps: Start with a line segment.
+  Remove middle third. Repeat for
+  remaining segments.
+
+  ---------------------------------
+
+12. SIERPINSKI TRIANGLE
+
+Algorithm: Start with triangle. Remove central upside-down triangle.
+Recursive pattern continues infinitely.
+
+  ---------------------------------
+  13. APOLLONIAN GASKET
+  ---------------------------------
+  Based on circle packing: For each
+  triple of circles, compute new
+  tangent circle. Recursive circle
+  insertion produces structure.
+
+  ---------------------------------
+
+14. QUATERNION JULIA SET (3D)
+
+Formula: q_{n+1} = q_n^2 + c Where q is quaternion. Rendering: Raymarch
+distance estimator: DE(p) ≈ 0.5 * ln(r) * r / dr
+
+  ---------------------------------
+  15. MANDELBULB (3D MANDELBROT)
+  ---------------------------------
+  Formula: Convert to spherical
+  coordinates: r = |z| θ =
+  arccos(z_z / r) φ = atan2(z_y,
+  z_x) Then raise to power n: z =
+  r^n * (sin(nθ)cos(nφ),
+  sin(nθ)sin(nφ), cos(nθ)) + c
+
+  ---------------------------------
+
+16. MANDELCUBE
+
+Variant of Mandelbulb using cubic coordinate transformations.
+
+  ---------------------------------
+  17. 4D FRACTALS (HYPERCOMPLEX)
+  ---------------------------------
+  Generalization: z_{n+1} = z_n^p +
+  c Where z is 4D vector. Rendered
+  via slicing or projection.
+
+  ---------------------------------
+
+18. ESCAPE TIME ALGORITHM (GENERAL)
+
+Given complex point c: z = initial value (often 0) for n in iterations:
+z = f(z, c) if |z| > bailout: break Color based on: - n - smooth
+escape - orbit trap distance - distance estimator (for 3D)
+
+  ---------------------------------
+  19. ORBIT TRAPS
+  ---------------------------------
+  Track minimum distance of orbit
+  to: - a line - a circle - a
+  cross - a shape Color forms
+  patterns using trap geometry.
+
+  ---------------------------------
+
+20. DISTANCE ESTIMATOR (DE)
+
+Used for 3D raymarching: Example for Mandelbrot: DE(z) ≈ |z| * log|z| /
+|dz| Where dz = derivative of orbit.
+
+------------------------------------------------------------------------
+
+END OF DOCUMENT
