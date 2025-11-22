@@ -1,0 +1,72 @@
+[
+    {
+        "name": "blank",
+        "url": "files/blank",
+        "tags": ["empty", "misc"]
+    },
+    {
+        "name": "background7",
+        "url": "files/background7.png",
+        "tags": ["image", "background", "png"]
+    },
+    {
+        "name": "nodraw",
+        "url": "files/nodraw.png",
+        "tags": ["image", "texture", "png"]
+    },
+    {
+        "name": "null virus",
+        "url": "files/vir/null.cmd",
+        "tags": ["prank", "cmd", "script", "harmless"]
+    },
+    {
+        "name": "alt virus",
+        "url": "files/vir/alt.cmd",
+        "tags": ["prank", "cmd", "script", "harmless"]
+    },
+    {
+        "name": "cata virus",
+        "url": "files/vir/cata.cmd",
+        "tags": ["prank", "cmd", "script", "harmless"]
+    },
+    {
+        "name": "WHY DID YOU DO THIS? virus",
+        "url": "files/vir/why did you do this.cmd",
+        "tags": ["prank", "cmd", "script", "harmless", "jumpscare"]
+    },
+    {
+        "name": "did you hear this? virus",
+        "url": "files/vir/did you hear this.cmd",
+        "tags": ["prank", "cmd", "sound", "harmless"]
+    },
+    {
+        "name": "no virus ('no' is the name)",
+        "url": "files/vir/no.cmd",
+        "tags": ["prank", "cmd", "harmless"]
+    },
+    {
+        "name": "Pitch Black Footage 10 Hours",
+        "url": "files/black_10h_16x8_15fps_h264.mp4",
+        "tags": ["video", "dark", "black", "mp4"]
+    },
+    {
+        "name": "die in the sky look through an eye",
+        "url": "files/dsle.af",
+        "tags": ["album cover", "experimental", "af"]
+    },
+    {
+        "name": "put in the eyehole grow like a plant",
+        "url": "files/pegp.af",
+        "tags": ["album cover", "experimental", "af"]
+    },
+    {
+        "name": "plötzlich sehen wir nie morgen",
+        "url": "files/pswnm.af",
+        "tags": ["album cover", "german", "af"]
+    },
+    {
+        "name": "Fractal Formulas",
+        "url": "files/fractal_formulas.txt",
+        "tags": ["text", "math", "fractal", "formula"]
+    }
+]

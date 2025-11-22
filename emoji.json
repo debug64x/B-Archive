@@ -1,0 +1,18 @@
+[
+    { "keyword": "image",      "emoji": "🧱" },
+    { "keyword": "mish",       "emoji": "🖼️" },
+    { "keyword": "fun",        "emoji": "🏳️‍🌈" },
+    { "keyword": "background", "emoji": "🌅" },
+    { "keyword": "texture",    "emoji": "🧱" },
+    { "keyword": "virus",      "emoji": "🦠" },
+    { "keyword": "prank",      "emoji": "⚠️" },
+    { "keyword": "cmd",        "emoji": "💻" },
+    { "keyword": "video",      "emoji": "🎬" },
+    { "keyword": "audiofile",  "emoji": "🎵" },
+    { "keyword": "math",       "emoji": "🔢" },
+    { "keyword": "text",       "emoji": "📄" },
+    { "keyword": "fractal",    "emoji": "🧮" },
+    { "keyword": "black",      "emoji": "🌑" },
+    { "keyword": "german",      "emoji": "🇩🇪" },
+    { "keyword": "licensed",   "emoji": "🏅" }
+]

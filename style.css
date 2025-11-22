@@ -1,0 +1,132 @@
+/* --- GLOBAL --- */
+body {
+    font-family: monospace;
+    background-image: url(files/background7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    margin: 0;
+    padding: 0;
+    padding-top: 56px; /* space for fixed top bar */
+}
+
+/* --- TOP BAR --- */
+.bar {
+    width: 100%;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* --- SEARCH BAR --- */
+.searchbar {
+    width: 98%;
+    padding: 6px;
+    background: rgba(50, 50, 50, 0.8);
+    border: 1px solid rgba(100,100,100,0.7);
+    color: white;
+    font-family: monospace;
+}
+
+/* --- MAIN CONTAINER --- */
+.container {
+    border-radius: 4px;
+    margin: 8px;
+    padding: 8px;
+    background: rgba(24, 24, 24, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+/* --- FILE CARD --- */
+.file {
+    padding: 8px;
+    margin: 12px;
+    width: 89%;
+    color: whitesmoke;
+    border-radius: 4px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(24, 24, 24, 0.50),
+        rgba(90, 90, 90, 0.50)
+    );
+
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+}
+
+/* --- FILE ICON --- */
+.icon {
+    margin-right: 6px;
+    font-size: 18px;
+}
+
+/* --- FILENAME LABEL --- */
+.filename {
+    background: rgba(90, 90, 90, 0.5);
+    color: whitesmoke;
+    border-radius: 2px;
+    padding: 2px 4px;
+}
+
+/* --- FILESIZE LABEL --- */
+.filesize {
+    background: rgba(191, 191, 101, 0.55);
+    color: whitesmoke;
+    border-radius: 2px;
+    padding: 2px 4px;
+}
+
+/* --- TAG LIST --- */
+.tags {
+    margin-top: 6px;
+}
+
+/* --- INDIVIDUAL TAG --- */
+.tag {
+    display: inline-block;
+    padding: 2px 6px;
+    margin-right: 5px;
+    margin-top: 3px;
+    font-size: 11px;
+
+    background: rgba(50, 50, 50, 0.75);
+    color: white;
+    border-radius: 3px;
+}
+
+/* --- DOWNLOAD BUTTON --- */
+.download-btn {
+    margin-top: 8px;
+    padding: 6px 12px;
+    font-family: monospace;
+
+    color: white;
+    background: rgba(60, 60, 60, 0.85);
+    border: 1px solid rgba(110,110,110,0.5);
+    border-radius: 3px;
+    text-decoration: none;
+
+    display: inline-block;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background: rgba(90, 90, 90, 0.95);
+}
+
+.title{
+    font-family: serif, monospace;
+    color: azure;
+}
+
+.lower_title{
+    font-family: serif, monospace;
+    color: azure;
+    font-size: 12px;
+}
